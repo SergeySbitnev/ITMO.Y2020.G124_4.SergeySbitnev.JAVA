@@ -12,20 +12,22 @@ public class Main {
 
         double ArrayElements[] = new double[AmountElements];
 
-        for(int i = 0; i < AmountElements; i++){
+        //Заполняю массив случайными значениями
+        for(int i = 0; i < ArrayElements.length; i++){
             ArrayElements[i] = Math.random();
         }
 
         double max, min, average;
-        max =min = average= ArrayElements[0];
+        max = min = average= ArrayElements[0];
 
-        for(int i = 1; i < AmountElements; i++){
+        //Нахожу минимальное, максимальное и сумму
+        for(int i = 0; i < ArrayElements.length; i++){
             if (ArrayElements[i] > max) max = ArrayElements[i];
             if (ArrayElements[i] < min) min = ArrayElements[i];
             average += ArrayElements[i];
         }
 
-        for(int i = 0; i < AmountElements; i++){
+        for(int i = 0; i < ArrayElements.length; i++){
             System.out.println(ArrayElements[i]);
         }
         System.out.println("Максимальный элемент массива: " + max);
