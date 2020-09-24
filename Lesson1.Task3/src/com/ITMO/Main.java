@@ -66,7 +66,7 @@ public class Main {
         }
         timeSortByInsert = System.nanoTime() - timeSortByInsert;
 
-        /*
+
         System.out.println("Исходный массив: ");
         for (int i = 0; i < ArrayElements.length; i++) System.out.println(ArrayElements[i]);
         System.out.println("Сортировка пузырьком: ");
@@ -75,7 +75,7 @@ public class Main {
         for (int i = 0; i < SelectionSort.length; i++) System.out.println(SelectionSort[i]);
         System.out.println("Сортировка вставками: ");
         for (int i = 0; i < SortByInsert.length; i++) System.out.println(SortByInsert[i]);
-        */
+
 
         System.out.println("Время затраченное на сортировку пузырьком (наносекунд): " + timeBubbleSort);
         System.out.println("Время затраченное на сортировку выбором (наносекунд): " + timeSelectionSort);

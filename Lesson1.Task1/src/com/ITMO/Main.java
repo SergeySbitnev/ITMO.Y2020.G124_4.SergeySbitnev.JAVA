@@ -21,7 +21,7 @@ public class Main {
         max = min = average= ArrayElements[0];
 
         //Нахожу минимальное, максимальное и сумму
-        for(int i = 0; i < ArrayElements.length; i++){
+        for(int i = 1; i < ArrayElements.length; i++){
             if (ArrayElements[i] > max) max = ArrayElements[i];
             if (ArrayElements[i] < min) min = ArrayElements[i];
             average += ArrayElements[i];
@@ -32,6 +32,6 @@ public class Main {
         }
         System.out.println("Максимальный элемент массива: " + max);
         System.out.println("Минимальный элемент массива: " + min);
-        System.out.println("Среднее значение элементов массива: " + average/AmountElements);
+        System.out.println("Среднее значение элементов массива: " + average/ArrayElements.length);
     }
 }
