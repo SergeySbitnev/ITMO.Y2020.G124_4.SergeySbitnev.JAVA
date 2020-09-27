@@ -31,6 +31,7 @@ public class Main {
         int quantity = 10;
         Vector[] ManyVectors = Vector.RandomVector(quantity);
 
+        System.out.println(quantity + " случайных векторов.");
         for(int i = 0; i < ManyVectors.length; i++){
             System.out.println("Вектор с индексом " + i + ": (" + ManyVectors[i].x + ", " + ManyVectors[i].y + ", " + ManyVectors[i].z + ")");
         }

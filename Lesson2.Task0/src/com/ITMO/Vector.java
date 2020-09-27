@@ -23,8 +23,7 @@ public class Vector {
 
     //Векторное произведение
     static Vector CrossProduct(Vector a, Vector b){
-        Vector c = new Vector(a.y*b.z-a.z*b.y, a.z*b.x-a.x*b.z, a.x*b.y-a.y*b.x);
-        return c;
+        return new Vector(a.y*b.z-a.z*b.y, a.z*b.x-a.x*b.z, a.x*b.y-a.y*b.x);
     }
 
     //Угол между векторами (косинус угла)
@@ -34,13 +33,11 @@ public class Vector {
 
     //Сумма векторов
     static Vector SumVectors (Vector a, Vector b){
-        Vector c = new Vector(a.x+b.x, a.y+b.y, a.z+b.z);
-        return c;
+        return new Vector(a.x+b.x, a.y+b.y, a.z+b.z);
     }
     //Разность векторов
     static Vector SubtraVectors (Vector a, Vector b){
-        Vector c = new Vector(a.x-b.x, a.y-b.y, a.z-b.z);
-        return c;
+        return new Vector(a.x-b.x, a.y-b.y, a.z-b.z);
     }
 
     //Массив случайных векторов
