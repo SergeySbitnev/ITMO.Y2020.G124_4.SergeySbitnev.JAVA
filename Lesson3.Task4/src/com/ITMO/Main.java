@@ -15,11 +15,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[] MyArray = {2, 6, 7, 4, 1, 3, 5, 14, 27, 33, 4, 1, 10, 8, 24, 11};
+        int[] MyArray = {2, 6, 7, 4, 1, 3, 5, 14, 27, 33, 4, 1, 10, 8, 24, 11, 15};
         int num = 14;
         int index = IndexOf(MyArray, num);
         if (index == -1){
-            System.out.println("Данный элемент не входит в массив!");
+            System.out.println("Данный элемент не входит в массив!" + index);
         } else{
             System.out.println("Индекс данного элемента: " + index);
         }
@@ -27,7 +27,7 @@ public class Main {
         num = 15;
         index = IndexOf(MyArray, num);
         if (index == -1){
-            System.out.println("Данный элемент не входит в массив!");
+            System.out.println("Данный элемент не входит в массив!" + index);
         } else{
             System.out.println("Индекс данного элемента: " + index);
         }

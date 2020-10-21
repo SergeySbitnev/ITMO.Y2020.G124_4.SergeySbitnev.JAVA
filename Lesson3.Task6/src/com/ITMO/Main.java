@@ -12,7 +12,7 @@ public class Main {
             }
         }
         int[] finishArray = new int[index];
-        System.out.println(index);
+        //System.out.println(index);
         System.arraycopy(newArray, 0, finishArray, 0, index);
         return finishArray;
     }

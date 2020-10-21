@@ -90,7 +90,7 @@ public class ArrayWorks {
         }
         int pivot = array[middle];
 
-        //Делим на подмассивы, болбше и меньше опорного
+        //Делим на подмассивы, больше и меньше опорного
         int i = start;
         int j = finish;
         while (i <= j) {

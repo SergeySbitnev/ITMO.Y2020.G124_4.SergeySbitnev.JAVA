@@ -48,19 +48,19 @@ public class Main {
         int start = 0;
         int finish = QuickSortFalse.length - 1;
         time = System.nanoTime();
-        ArrayWorks.QuickSort(QuickSortTrue, start, finish, true);
+        ArrayWorks.QuickSort(QuickSortFalse, start, finish, false);
         time = System.nanoTime() - time;
-        System.out.println("Быстрая сортировка (опорный средний): ");
-        ArrayWorks.PrintArray(QuickSortTrue);
+        System.out.println("Быстрая сортировка (опорный первый): ");
+        ArrayWorks.PrintArray(QuickSortFalse);
         System.out.println("Время: " + time + "нс");
 
         start = 0;
         finish = QuickSortTrue.length - 1;
         time = System.nanoTime();
-        ArrayWorks.QuickSort(QuickSortFalse, start, finish, false);
+        ArrayWorks.QuickSort(QuickSortTrue, start, finish, true);
         time = System.nanoTime() - time;
-        System.out.println("Быстрая сортировка (опорный первый): ");
-        ArrayWorks.PrintArray(QuickSortFalse);
+        System.out.println("Быстрая сортировка (опорный средний из трех): ");
+        ArrayWorks.PrintArray(QuickSortTrue);
         System.out.println("Время: " + time + "нс");
     }
 
