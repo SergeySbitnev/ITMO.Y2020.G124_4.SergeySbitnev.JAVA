@@ -16,7 +16,7 @@ public class Main {
             for (String s : text){
                 System.out.println(s);
             }
-            System.out.println(text.size());
+            //System.out.println(text.size());
 
         } catch (FileNotFoundException e) {
             System.out.println("Не удается найти указанный файл.");
